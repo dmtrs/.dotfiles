@@ -1,6 +1,6 @@
 #!/bin/bash
 # fedora installations 
-su -c "yum install -y tmux weechat vim namei git xterm" 
+su -c "yum install -y tmux weechat vim namei git xterm fpaste" 
 # vim configutation
 cp ./.vimrc ~/
 cp ./.vim/funclist.txt ~/
