@@ -1,0 +1,11 @@
+linux.conf
+==========
+The scripts and config files I want under my linux machine.[Dimitrios Mengidis](http://dmtrs.devio.us/blog)
+###How to install
+You can clone the repository and then use the <code>init.sh</code> script in the root dir of the repository.
+__It is fedora dedicated at the moment, due to the yum use__
+Example:
+    git clone https://dmtrs@github.com/dmtrs/linux.conf.git
+    cd linux.conf
+    chmod 755 init.sh
+    ./init.sh
