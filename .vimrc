@@ -73,3 +73,5 @@ syntax on
 
 " CTRL-C = SVN Commit
 map <C-Q> :w<CR>:!svn commit<CR>
+" json highlight
+autocmd BufNewFile,BufRead *.json set ft=javascript
