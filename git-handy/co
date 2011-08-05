@@ -1,0 +1,3 @@
+#!/bin/bash
+cobranch=`git branch | grep $1 | sed -n 1p`
+git checkout $cobranch
