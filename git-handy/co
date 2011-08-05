@@ -1,3 +1,8 @@
 #!/bin/bash
 cobranch=`git branch | grep $1 | sed -n 1p`
-git checkout $cobranch
+if [ ${#cobranch} -gt 0 ]
+then
+    git checkout $cobranch
+else 
+    echo "No branch match '"$1"'"
+fi
