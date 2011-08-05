@@ -19,7 +19,7 @@ XTerm*background: black
 XTerm*cursorColor: rgb:00/80/00
 XTerm*borderColor: white
 XTerm*scrollColor: black
-XTerm*visualBell: true
+XTerm*visualBell: false
 XTerm*saveLines: 1000
 !! XTerm.VT100.allowSendEvents: True
 XTerm*allowSendEvents: True
