@@ -10,3 +10,12 @@ __It is fedora dedicated at the moment, due to the yum use__
     cd linux.conf
     chmod 755 init.sh
     ./init.sh
+
+###Git handy commands
+- co, checkout a branch by using grep expressions
+
+Example:
+
+    co mast
+
+The above command will get the list of the branchs and return the 1st line that contains 'mast' ( I wanted to checkout master )
