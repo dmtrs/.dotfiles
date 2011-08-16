@@ -2,4 +2,4 @@
 #
 # echo the current branch in .git
 
-git status | grep branch | awk '{print $4}'
+git branch | grep \* | awk '{print $2}'
