@@ -69,9 +69,15 @@ set ruler                      " show line and column information
 set showmatch                  " show matching brackets
 set formatoptions=tcqor
 set whichwrap=b,s,<,>,[,]
+set listchars=tab:\|\ ,trail:.,extends:>,precedes:< " what to show when I hit :set list
 syntax on
 
 " CTRL-C = SVN Commit
 map <C-Q> :w<CR>:!svn commit<CR>
 " json highlight
 autocmd BufNewFile,BufRead *.json set ft=javascript
+
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
