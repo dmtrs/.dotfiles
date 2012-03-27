@@ -36,9 +36,6 @@ set scrolloff=3
 " Repair wired terminal/vim settings
 set backspace=start,eol
 
-" Map <CTRL>-B to run PHP parser check
-noremap <C-B> :w<CR>:!php -l %<CR>
-
 " The completion dictionary is provided by Rasmus:
 " http://lerdorf.com/funclist.txt
 set dictionary-=/home/dmtrs/funclist.txt dictionary+=/home/dmtrs/funclist.txt
@@ -61,12 +58,7 @@ imap <C-F> <c-r>=InsertTabWrapper()<cr>
 
 " Don't like set list
 " set list
-" set listchars=tab:>-,trail:-
-" set listchars=tab:>-,trail:-,eol:$
-set ignorecase                  " caseinsensitive searches
-set showmode                    " always show command or insert mode
-set ruler                      " show line and column information
-set showmatch                  " show matching brackets
+" set listchars=tab:>-,trail:- " set listchars=tab:>-,trail:-,eol:$ set ignorecase                  " caseinsensitive searches set showmode                    " always show command or insert mode set ruler                      " show line and column information set showmatch                  " show matching brackets
 set formatoptions=tcqor
 set whichwrap=b,s,<,>,[,]
 set listchars=tab:\|\ ,trail:.,extends:>,precedes:< " what to show when I hit :set list
@@ -76,6 +68,8 @@ syntax on
 map <C-Q> :w<CR>:!svn commit<CR>
 " json highlight
 autocmd BufNewFile,BufRead *.json set ft=javascript
+autocmd BufNewFile,BufRead *.php noremap <C-B> :w<CR>:!php -l %<CR>
+autocmd BufNewFile,BufRead *.sql noremap <C-B> :w<CR>:!mysql -u user -ppassword database < %<CR>
 
 noremap <Up> <nop>
 noremap <Down> <nop>
