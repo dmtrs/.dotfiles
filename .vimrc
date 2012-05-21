@@ -69,6 +69,7 @@ map <C-Q> :w<CR>:!svn commit<CR>
 " json highlight
 autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead *.php noremap <C-B> :w<CR>:!php -l %<CR>
+autocmd BufNewFile,BufRead *Test.php noremap <C-B> :w<CR>:!phpunit %<CR>
 autocmd BufNewFile,BufRead *.sql noremap <C-B> :w<CR>:!mysql -u user -ppassword database < %<CR>
 
 noremap <Up> <nop>
