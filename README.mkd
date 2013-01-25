@@ -6,10 +6,7 @@ You can clone the repository and then use the <code>init.sh</code> script in the
 __It is fedora dedicated at the moment, due to the yum use__
 ###Install
 
-    git clone https://dmtrs@github.com/dmtrs/linux.conf.git
-    cd linux.conf
-    chmod 755 init.sh
-    ./init.sh
+     # wget -q0- http://raw.github.com/dmtrs/linux.conf/master/init.sh | sh
 
 ###Git handy commands
 - co, checkout a branch by using grep expressions

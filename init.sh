@@ -1,16 +1,14 @@
 #!/bin/bash
 # fedora installations 
-su -c "yum install -y tmux weechat vim namei git xterm fpaste ack" 
+su -c "yum install -y tmux weechat vim namei fpaste ack git" 
+git clone http://github.com/dmtrs/linux.conf
 # vim configutation
-cp ./.vimrc ~/
-cp ./.vim/funclist.txt ~/
+cp ./linux.conf/.vimrc ~/
+cp ./linux.conf/.vim/funclist.txt ~/
 if [ ! -d ~/.vim ]
 then   
     mkdir ~/.vim
 fi    
-cp -rf ./.vim/* ~/.vim
-# xterm configuration
-cp ./.Xresources ~/
-xrdb -merge ~/.Xresources
+cp -rf ./linux.conf/.vim/* ~/.vim
 # tmux config
 cp ./.tmux.conf ~/
