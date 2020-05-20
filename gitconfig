@@ -1,0 +1,12 @@
+[user]
+	email = tydeas.dr@gmail.com
+	name = Dmtrs Flaco Meng
+[push]
+	default = matching
+[core]
+	editor = /usr/bin/vim
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
